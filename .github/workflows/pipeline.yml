@@ -94,7 +94,6 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_NOTIFICATIONS_TOKEN }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
   DAST:
-  jobs:
     needs: Deploy
     runs-on: ubuntu-latest
     permissions:
